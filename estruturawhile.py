@@ -7,8 +7,14 @@ usar while quando nao souber o limite
 
 
 '''
-r = 's'
-while r == 's':
-    r = str(input('qual o valor? ' ))
-    
- 
+r = 'p'
+while r == 'p':
+    r = str(input('qual o seu sexo? \nM - Masculino \nF - Feminino? ')).strip().upper()
+    if r != 'M' or r != 'F':
+        r = str(input('erro!! qual o seu sexo? \nM - Masculino \nF - Feminino? ')).strip().upper()
+        if r == 'M':
+            print('Voce e homem!')
+        elif r == 'F':
+            print('voce e mulher!')
+    else:
+        print('erro, digite novamente')
